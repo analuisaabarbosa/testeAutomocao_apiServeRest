@@ -12,7 +12,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Executar testes') {
+        stage('Executar os testes') {
             steps {
                 sh 'NO_COLOR=1 npm run start-and-test'
             }
